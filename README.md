@@ -1,9 +1,12 @@
 # ruOS
 
-**An agentic cloud desktop.** ruOS is your own Linux computer in the cloud, with
-the full [ruvnet](https://github.com/ruvnet) AI stack built in — reachable from
-any browser, an installable iPad app, or a native macOS app. Nothing to install
-to use it; a real desktop to drive when you want one.
+**An agentic desktop — a desktop that runs itself.** ruOS is a full Linux desktop
+with the entire [ruvnet](https://github.com/ruvnet) AI-agent stack built in: it
+acts on its own — research, writing, code, system tasks — instead of waiting for
+every click. It happens to run in the cloud and be reachable from any browser, an
+installable iPad app, or a native macOS app, but the identity is **agentic**, not
+"a cloud desktop." Nothing to install to use it; a real desktop to drive when you
+want one.
 
 This repo is the public control-and-extension surface for a ruOS desktop:
 
@@ -21,9 +24,11 @@ This repo is the public control-and-extension surface for a ruOS desktop:
 
 ## What ruOS is
 
-A ruOS desktop is a full GNOME Linux desktop running on a cloud VM, streamed to
-you over a remote-desktop transport. You reach it three ways, all against the
-same desktop:
+ruOS is an **agentic desktop**: a full GNOME Linux desktop with the ruvnet
+AI-agent stack wired in as a first-class control plane, so agents drive the
+machine — screen, keyboard, shell, and system actions — the same way you do. It
+runs on a VM and is streamed to you over a remote-desktop transport; you reach it
+three ways, all against the same desktop:
 
 - **Browser** — a rebranded [noVNC](https://novnc.com) viewer at
   `ruos.cognitum.one/vnc.html`. No install, any device.
@@ -64,6 +69,11 @@ On top of the desktop sit two control surfaces this repo documents:
   [`skills/`](./skills/).
 
 ## OS
+
+ruOS is an **agentic desktop**, not merely a remote/cloud desktop: the base is a
+conventional Linux desktop, and what makes it ruOS is the ruvnet AI-agent stack
+and MCP control plane layered on top so the machine acts on its own. The hosting
+below is an implementation detail of *where* it runs, not the product identity.
 
 | Aspect | Detail |
 |--------|--------|
