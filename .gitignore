@@ -1,0 +1,16 @@
+# Rust
+/target
+**/target
+Cargo.lock.bak
+
+# Env / secrets — never commit
+.env
+.env.*
+*.pem
+*.key
+id_ed25519*
+id_rsa*
+
+# OS / editor
+.DS_Store
+*.swp

@@ -1,0 +1,24 @@
+[package]
+name = "ruos-mcp"
+version = "0.1.0"
+edition = "2021"
+description = "MCP stdio server that gives an AI computer-use + CLI/console control of a ruOS desktop (screenshot + keyboard/mouse + shell + system actions + resolution), attached over SSH"
+license = "MIT"
+repository = "https://github.com/ruvnet/ruos"
+
+# Standalone crate — detached from any workspace a parent dir might declare.
+[workspace]
+
+[[bin]]
+name = "ruos-mcp"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+base64 = "0.22"
+
+[profile.release]
+opt-level = "z"
+lto = true
+strip = true
